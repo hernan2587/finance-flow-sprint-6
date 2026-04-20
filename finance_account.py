@@ -16,7 +16,7 @@ It calculates the monthly balance and displays a simple summary.
 
 class FinanceAccount:
 
-    def _init_(self, income, expenses, debt):
+    def __init__(self, income, expenses, debt):
 
         self.__income = income
 
@@ -56,7 +56,7 @@ class FinanceAccount:
 
     def calculate_balance(self):
 
-        return self._income - self.expenses - self._debt
+        return self.__income - self.__expenses - self.__debt
 
     # display summary
 
